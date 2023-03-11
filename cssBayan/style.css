@@ -55,7 +55,6 @@ details[open] summary {
 }
 
 details[open] .accordion-icon {
-    display: inline-block;
     background: url(../cssBayan/assets/close-icon.png) no-repeat;
 }
 
@@ -106,7 +105,6 @@ img {
 
 @media screen and (max-width: 1920px) {
     details .accordion-icon {
-        display: inline-block;
         background: url(../cssBayan/assets/open-icon.png) no-repeat;
     }
 
@@ -116,6 +114,12 @@ img {
 
     summary {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    details .accordion-icon {
+        display: inline-block;
     }
 }
 
