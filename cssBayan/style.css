@@ -59,11 +59,25 @@ details[open] .accordion-icon {
 }
 
 summary {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     list-style: none;
     font-weight: 700;
     font-size: 1.7rem;
     color: dodgerblue;
     transition: margin 850ms ease-out;
+}
+
+.summary-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-img {
+    display: flex;
+    justify-content: center;
 }
 
 img {
@@ -81,26 +95,6 @@ img {
     background: url(../cssBayan/assets/open-icon.png) no-repeat;
     transition: transform 0.9s ease-in-out;
     transform: scale(0.8);
-}
-
-.a1 {
-    margin-left: 10rem;
-}
-
-.a2 {
-    margin-left: 16.563rem;
-}
-
-.a3 {
-    margin-left: 20.188rem;
-}
-
-.a4 {
-    margin-left: 19.75rem;
-}
-
-.a5 {
-    margin-left: 17.625rem;
 }
 
 @media screen and (max-width: 1920px) {
@@ -129,68 +123,28 @@ img {
     }
 
     summary {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
     }
 
-    .a1 {
-        margin-left: 3.5rem;
+    @media screen and (max-width: 580px) {
+        img {
+            padding: 0;
+            margin: 0;
+            max-width: 15.625rem;
+        }
+
+        body {
+            flex-direction: column;
+        }
     }
 
-    .a2 {
-        margin-left: 11.3rem;
-    }
+    @media screen and (max-width: 320px) {
+        h1 {
+            font-size: 4rem;
+        }
 
-    .a3 {
-        margin-left: 15.5rem;
-    }
-
-    .a4 {
-        margin-left: 15rem;
-    }
-
-    .a5 {
-        margin-left: 12.3rem;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    img {
-        padding: 0;
-        margin: 0;
-        max-width: 15.625rem;
-    }
-
-    body {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    summary {
-        font-size: 2rem;
-    }
-
-    .a1 {
-        margin-left: 1.8rem;
-    }
-
-    .a2 {
-        margin-left: 10.5rem;
-    }
-
-    .a3 {
-        margin-left: 15.3rem;
-    }
-
-    .a4 {
-        margin-left: 14.7rem;
-    }
-
-    .a5 {
-        margin-left: 11.9rem;
+        summary {
+            font-size: 2rem;
+        }
     }
 }
