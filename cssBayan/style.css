@@ -23,7 +23,8 @@ details {
 }
 
 @media (hover: hover) {
-    details:hover img {
+    details:hover img,
+    details:hover .image-text {
         display: block;
     }
 
@@ -46,7 +47,8 @@ details {
     }
 }
 
-details[open] img {
+details[open] img,
+details[open] .image-text {
     display: block;
 }
 
@@ -82,7 +84,6 @@ summary {
 
 img {
     margin-top: 0.313rem;
-    padding-left: 4.875rem;
     display: none;
     transition: transform 0.9s ease-in-out;
     transform: scale(0.8);
@@ -95,6 +96,14 @@ img {
     background: url(../cssBayan/assets/open-icon.png) no-repeat;
     transition: transform 0.9s ease-in-out;
     transform: scale(0.8);
+}
+
+.image-text {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    align-self: center;
 }
 
 @media screen and (max-width: 1920px) {
